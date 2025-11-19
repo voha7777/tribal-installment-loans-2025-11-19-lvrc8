@@ -249,13 +249,81 @@
             color: #4939CC;
             transform: translateX(4px);
         }
+
+        .nav-link {
+            color: #6B7280;
+            font-weight: 500;
+            transition: all 0.3s ease-out;
+            position: relative;
+        }
+
+        .nav-link:hover {
+            color: #5B4BFF;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #5B4BFF;
+            transition: width 0.3s ease-out;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .desktop-nav {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .mobile-menu {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                border-bottom: 1px solid #E5E7EB;
+                padding: 1rem;
+            }
+
+            .mobile-menu.hidden {
+                display: none;
+            }
+
+            .mobile-menu a {
+                display: block;
+                padding: 0.75rem 1rem;
+                color: #6B7280;
+                font-weight: 500;
+                transition: all 0.3s ease-out;
+            }
+
+            .mobile-menu a:hover {
+                color: #5B4BFF;
+                background-color: #F3F4F6;
+                border-radius: 0.5rem;
+            }
+        }
     </style>
 </head>
 <body class="bg-white text-gray-900">
     
     <!-- Header -->
     <header class="sticky top-0 z-50 bg-white shadow-sm">
-        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center relative">
             <!-- Logo -->
             <a href="https://voha7777.github.io/tribal-installment-loans-2025-11-19-lvrc8" class="flex items-center gap-2">
                 <div class="w-10 h-10 bg-gradient-to-br from-indigo-600 to-indigo-400 rounded-lg flex items-center justify-center">
@@ -264,13 +332,35 @@
                 <span class="text-xl font-bold text-gray-900">Tribal Loans</span>
             </a>
             
-            <!-- Back Link -->
-            <a href="https://voha7777.github.io/tribal-installment-loans-2025-11-19-lvrc8" class="text-gray-700 font-medium hover:text-indigo-600 transition-colors duration-300 flex items-center gap-2">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            <!-- Desktop Navigation -->
+            <div class="desktop-nav flex items-center gap-8">
+                <a href="https://voha7777.github.io/tribal-installment-loans-2025-11-19-lvrc8/#features" class="nav-link">Features</a>
+                <a href="https://voha7777.github.io/tribal-installment-loans-2025-11-19-lvrc8/#benefits" class="nav-link">Benefits</a>
+                <a href="https://voha7777.github.io/tribal-installment-loans-2025-11-19-lvrc8/#testimonials" class="nav-link">Testimonials</a>
+                <a href="https://voha7777.github.io/tribal-installment-loans-2025-11-19-lvrc8/blog.html" class="nav-link">Blog</a>
+                <a href="https://www.tribalinstallmentloans.com/" class="btn-primary">
+                    <span>Apply Now</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle w-10 h-10 flex items-center justify-center rounded-lg hover:bg-gray-100 transition-colors" id="mobileMenuToggle">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
-                Back
-            </a>
+            </button>
+
+            <!-- Mobile Navigation Menu -->
+            <div class="mobile-menu hidden" id="mobileMenu">
+                <a href="https://voha7777.github.io/tribal-installment-loans-2025-11-19-lvrc8/#features">Features</a>
+                <a href="https://voha7777.github.io/tribal-installment-loans-2025-11-19-lvrc8/#benefits">Benefits</a>
+                <a href="https://voha7777.github.io/tribal-installment-loans-2025-11-19-lvrc8/#testimonials">Testimonials</a>
+                <a href="https://voha7777.github.io/tribal-installment-loans-2025-11-19-lvrc8/blog.html">Blog</a>
+                <a href="https://www.tribalinstallmentloans.com/" class="block px-6 py-2 bg-indigo-600 text-white font-bold rounded-full text-center mt-2 hover:bg-indigo-700 transition-colors">Apply Now</a>
+            </div>
         </nav>
     </header>
     
@@ -594,6 +684,24 @@
     <!-- JavaScript -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+            const mobileMenu = document.getElementById('mobileMenu');
+
+            if (mobileMenuToggle && mobileMenu) {
+                mobileMenuToggle.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+
+                // Close menu when a link is clicked
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            }
+
             // Smooth Scroll for Anchor Links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
