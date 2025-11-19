@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read our blog for insights on installment loans, flexible borrowing, financial management, and smart lending practices. Get expert tips and guides from Tribal Installment Loans.">
+    <meta name="keywords" content="installment loans blog, borrowing guides, financial tips, loan advice, flexible payments">
+    <meta name="author" content="Tribal Installment Loans">
+    <title>Blog - Tribal Installment Loans | Lending Insights & Financial Guides</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        body {
+            background-color: #FFFFFF;
+            color: #1F2937;
+        }
+        
+        /* Primary color variables */
+        :root {
+            --primary: #5B4BFF;
+            --secondary: #EEF0FF;
+            --accent: #00E5A8;
+        }
+        
+        .btn-primary {
+            background-color: #5B4BFF;
+            color: white;
+            border-radius: 9999px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease-out;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .btn-primary:hover {
+            filter: brightness(1.1);
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(91, 75, 255, 0.3);
+        }
+        
+        .btn-primary:active {
+            transform: scale(0.98);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: #5B4BFF;
+            border: 2px solid #5B4BFF;
+            border-radius: 9999px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease-out;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #5B4BFF;
+            color: white;
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(91, 75, 255, 0.3);
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-out;
+            border: 1px solid #F3F4F6;
+        }
+        
+        .feature-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 60px rgba(91, 75, 255, 0.15);
+            border-color: #EEF0FF;
+        }
+        
+        .blog-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-out;
+            border: 1px solid #F3F4F6;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 60px rgba(91, 75, 255, 0.15);
+            border-color: #EEF0FF;
+        }
+        
+        .featured-blog-card {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 2.5rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+            transition: all 0.3s ease-out;
+            border: 1px solid #F3F4F6;
+            background: linear-gradient(135deg, rgba(91, 75, 255, 0.02) 0%, rgba(0, 229, 168, 0.02) 100%);
+        }
+        
+        .featured-blog-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 30px 80px rgba(91, 75, 255, 0.2);
+            border-color: #EEF0FF;
+        }
+        
+        .benefit-item {
+            transition: all 0.3s ease-out;
+        }
+        
+        .benefit-item:hover {
+            transform: translateX(8px);
+        }
+        
+        .testimonial-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-out;
+            border: 1px solid #F3F4F6;
+        }
+        
+        .testimonial-card:hover {
+            box-shadow: 0 20px 60px rgba(91, 75, 255, 0.15);
+            transform: translateY(-4px);
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid #E5E7EB;
+            transition: all 0.3s ease-out;
+        }
+        
+        .faq-question {
+            cursor: pointer;
+            padding: 1.5rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: #1F2937;
+            transition: all 0.3s ease-out;
+            user-select: none;
+        }
+        
+        .faq-question:hover {
+            color: #5B4BFF;
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease-out;
+            color: #5B4BFF;
+        }
+        
+        .faq-answer {
+            overflow: hidden;
+            transition: all 0.3s ease-out;
+            color: #6B7280;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .faq-answer.hidden {
+            display: none;
+        }
+        
+        .star-rating {
+            color: #FBBF24;
+        }
+        
+        .gradient-accent {
+            background: linear-gradient(135deg, #5B4BFF 0%, #00E5A8 100%);
+        }
+        
+        .section-title {
+            color: #5B4BFF;
+            font-weight: 700;
+            font-size: 2.25rem;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+        
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 1.875rem;
+            }
+        }
+        
+        .text-accent {
+            color: #00E5A8;
+        }
+        
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: white;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .mobile-menu {
+            transition: all 0.3s ease-out;
+        }
+        
+        .mobile-menu.hidden {
+            display: none;
+        }
+
+        .blog-date {
+            font-size: 0.875rem;
+            color: #6B7280;
+            font-weight: 500;
+        }
+
+        .blog-excerpt {
+            color: #6B7280;
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+
+        .read-more-link {
+            color: #5B4BFF;
+            font-weight: 600;
+            transition: all 0.3s ease-out;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .read-more-link:hover {
+            color: #4939CC;
+            transform: translateX(4px);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="https://voha7777.github.io/tribal-installment-loans-2025-11-19-lvrc8" class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-gradient-to-br from-indigo-600 to-indigo-400 rounded-lg flex items-center justify-center">
+                    <span class="text-white font-bold text-lg">T</span>
+                </div>
+                <span class="text-xl font-bold text-gray-900">Tribal Loans</span>
+            </a>
+            
+            <!-- Back Link -->
+            <a href="https://voha7777.github.io/tribal-installment-loans-2025-11-19-lvrc8" class="text-gray-700 font-medium hover:text-indigo-600 transition-colors duration-300 flex items-center gap-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+                Back
+            </a>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="relative py-32 md:py-40 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-indigo-50 via-white to-emerald-50 opacity-60"></div>
+        <div class="absolute top-20 right-10 w-72 h-72 bg-indigo-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+        <div class="absolute bottom-0 left-10 w-72 h-72 bg-emerald-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight tracking-tight">
+                    Our <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-emerald-500">Blog</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed font-medium">
+                    Expert insights, financial guides, and lending advice to help you make informed decisions about installment loans and smart borrowing.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Purpose Section -->
+    <section class="py-20 md:py-32 bg-gradient-to-b from-white to-indigo-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12 border border-indigo-100">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Welcome to Our Financial Resource Hub</h2>
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    Our blog is dedicated to providing you with comprehensive, practical information about installment loans, financial management, and smart borrowing strategies. Whether you're considering an installment loan for the first time or looking to optimize your borrowing experience, you'll find valuable insights here.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-xl bg-gradient-to-br from-indigo-100 to-indigo-50">
+                                <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-1">Borrowing Guides</h3>
+                            <p class="text-sm text-gray-600">Step-by-step guides to understanding and securing installment loans</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-xl bg-gradient-to-br from-emerald-100 to-emerald-50">
+                                <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-1">Financial Tips</h3>
+                            <p class="text-sm text-gray-600">Expert advice on budgeting, debt management, and financial planning</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-xl bg-gradient-to-br from-blue-100 to-blue-50">
+                                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-1">Best Practices</h3>
+                            <p class="text-sm text-gray-600">Proven strategies for responsible borrowing and credit building</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Blog Post -->
+    <section class="py-20 md:py-32 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title mb-12">Featured Article</h2>
+            
+            <div class="featured-blog-card">
+                <div class="mb-4">
+                    <span class="blog-date">
+                        <i class="far fa-calendar mr-2"></i>Published on November 19, 2025
+                    </span>
+                </div>
+                
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+                    Understanding Installment Loans: A Complete Guide to Fast and Flexible Borrowing
+                </h3>
+                
+                <p class="blog-excerpt mb-8">
+                    Installment loans offer fast, flexible borrowing solutions for unexpected expenses and financial goals. Unlike traditional bank loans requiring weeks of processing, online installment lenders provide quick approvals and funds within 24 hours. These loans feature fixed monthly payments, making budgeting predictable and straightforward. With accessible credit requirements beyond just credit scores, installment loans serve borrowers traditional banks often reject. Common uses include emergency medical bills, vehicle repairs, debt consolidation, and home maintenance. By comparing lenders, understanding all costs upfront, and managing payments responsibly, borrowers can leverage installment loans effectively while building credit history and achieving financial stability.
+                </p>
+                
+                <a href="https://voha7777.github.io/tribal-installment-loans-2025-11-19-lvrc8/blog/understanding-installment-loans-a-complete-guide-t.html" class="read-more-link">
+                    <span>Read Full Article</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="py-20 md:py-32 bg-gradient-to-b from-indigo-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title mb-4">More Articles</h2>
+            <p class="text-lg text-gray-600 mb-12">
+                Explore our growing collection of insightful articles about installment loans and financial management.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Placeholder Blog Card 1 -->
+                <div class="blog-card flex flex-col">
+                    <div class="mb-4">
+                        <span class="blog-date">Coming Soon</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">
+                        How to Choose the Right Installment Loan for Your Needs
+                    </h3>
+                    <p class="blog-excerpt mb-6 flex-grow">
+                        Learn how to evaluate different installment loan options and find the perfect fit for your financial situation...
+                    </p>
+                    <button disabled class="text-gray-400 font-medium inline-flex items-center gap-2 cursor-not-allowed">
+                        <span>Coming Soon</span>
+                    </button>
+                </div>
+
+                <!-- Placeholder Blog Card 2 -->
+                <div class="blog-card flex flex-col">
+                    <div class="mb-4">
+                        <span class="blog-date">Coming Soon</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">
+                        Building Credit Through Responsible Installment Loan Management
+                    </h3>
+                    <p class="blog-excerpt mb-6 flex-grow">
+                        Discover how strategic installment loan use can help you build a stronger credit profile...
+                    </p>
+                    <button disabled class="text-gray-400 font-medium inline-flex items-center gap-2 cursor-not-allowed">
+                        <span>Coming Soon</span>
+                    </button>
+                </div>
+
+                <!-- Placeholder Blog Card 3 -->
+                <div class="blog-card flex flex-col">
+                    <div class="mb-4">
+                        <span class="blog-date">Coming Soon</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">
+                        Emergency Expenses? Here's How Installment Loans Can Help
+                    </h3>
+                    <p class="blog-excerpt mb-6 flex-grow">
+                        Explore how installment loans provide a fast and reliable solution for unexpected financial emergencies...
+                    </p>
+                    <button disabled class="text-gray-400 font-medium inline-flex items-center gap-2 cursor-not-allowed">
+                        <span>Coming Soon</span>
+                    </button>
+                </div>
+
+                <!-- Placeholder Blog Card 4 -->
+                <div class="blog-card flex flex-col">
+                    <div class="mb-4">
+                        <span class="blog-date">Coming Soon</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">
+                        Understanding APR and Interest Rates in Installment Loans
+                    </h3>
+                    <p class="blog-excerpt mb-6 flex-grow">
+                        A comprehensive breakdown of how interest rates work and what you should know before borrowing...
+                    </p>
+                    <button disabled class="text-gray-400 font-medium inline-flex items-center gap-2 cursor-not-allowed">
+                        <span>Coming Soon</span>
+                    </button>
+                </div>
+
+                <!-- Placeholder Blog Card 5 -->
+                <div class="blog-card flex flex-col">
+                    <div class="mb-4">
+                        <span class="blog-date">Coming Soon</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">
+                        Debt Consolidation with Installment Loans: A Strategic Approach
+                    </h3>
+                    <p class="blog-excerpt mb-6 flex-grow">
+                        Learn how to use installment loans strategically to consolidate debt and simplify your finances...
+                    </p>
+                    <button disabled class="text-gray-400 font-medium inline-flex items-center gap-2 cursor-not-allowed">
+                        <span>Coming Soon</span>
+                    </button>
+                </div>
+
+                <!-- Placeholder Blog Card 6 -->
+                <div class="blog-card flex flex-col">
+                    <div class="mb-4">
+                        <span class="blog-date">Coming Soon</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">
+                        The Application Process: What to Expect When Applying for an Installment Loan
+                    </h3>
+                    <p class="blog-excerpt mb-6 flex-grow">
+                        A step-by-step walkthrough of the installment loan application process and what you need to prepare...
+                    </p>
+                    <button disabled class="text-gray-400 font-medium inline-flex items-center gap-2 cursor-not-allowed">
+                        <span>Coming Soon</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 md:py-32 bg-gradient-to-r from-indigo-600 via-indigo-500 to-emerald-400 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-white rounded-full mix-blend-multiply filter blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 w-96 h-96 bg-white rounded-full mix-blend-multiply filter blur-3xl"></div>
+        </div>
+        
+        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                Ready to Get Your Installment Loan?
+            </h2>
+            <p class="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed max-w-2xl mx-auto">
+                Join thousands of satisfied customers who have accessed the funds they needed with our fast, reliable, and transparent lending service.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://www.tribalinstallmentloans.com/" class="px-8 py-3 bg-white text-indigo-600 font-bold rounded-full hover:bg-gray-100 transition-all duration-300 hover:scale-105 inline-flex items-center justify-center gap-2 shadow-lg">
+                    <span>Apply Now</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                </a>
+                <button class="px-8 py-3 border-2 border-white text-white font-bold rounded-full hover:bg-white/10 transition-all duration-300 hover:scale-105 inline-flex items-center justify-center gap-2">
+                    <span>Call Us</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-12">
+                <!-- Column 1: Brand -->
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-indigo-500 to-indigo-400 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">T</span>
+                        </div>
+                        <span class="text-xl font-bold text-white">Tribal Loans</span>
+                    </div>
+                    <p class="text-sm leading-relaxed">
+                        Fast, flexible, and transparent installment loans designed to meet your financial needs with integrity and respect.
+                    </p>
+                </div>
+                
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="https://voha7777.github.io/tribal-installment-loans-2025-11-19-lvrc8/#features" class="hover:text-white transition-colors duration-300">Features</a></li>
+                        <li><a href="https://voha7777.github.io/tribal-installment-loans-2025-11-19-lvrc8/#benefits" class="hover:text-white transition-colors duration-300">Benefits</a></li>
+                        <li><a href="https://voha7777.github.io/tribal-installment-loans-2025-11-19-lvrc8/#testimonials" class="hover:text-white transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="https://voha7777.github.io/tribal-installment-loans-2025-11-19-lvrc8/#about" class="hover:text-white transition-colors duration-300">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3: Legal -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-4">Legal</h4>
+                    <ul class="space-y-3">
+                        <li><a href="privacy.html" class="hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="blog.html" class="hover:text-white transition-colors duration-300">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors duration-300">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4: Contact & Social -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-4">Contact & Follow</h4>
+                    <p class="text-sm mb-4">
+                        <strong class="text-white">Email:</strong><br>
+                        <a href="mailto:info@tribalinstallmentloans.com" class="hover:text-white transition-colors duration-300">info@tribalinstallmentloans.com</a>
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-indigo-600 transition-all duration-300 hover:scale-110">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-indigo-600 transition-all duration-300 hover:scale-110">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-indigo-600 transition-all duration-300 hover:scale-110">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-indigo-600 transition-all duration-300 hover:scale-110">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Divider -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-sm text-gray-400">
+                        &copy; 2025 Tribal Installment Loans. All rights reserved.
+                    </p>
+                    <p class="text-sm text-gray-400">
+                        Designed with <span class="text-red-500">♥</span> for your financial success
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
