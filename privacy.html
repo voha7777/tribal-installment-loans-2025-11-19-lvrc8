@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for Tribal Installment Loans. Learn how we collect, use, and protect your personal information.">
+    <meta name="keywords" content="privacy policy, data protection, tribal loans, installment loans">
+    <meta name="author" content="Tribal Installment Loans">
+    <title>Privacy Policy - Tribal Installment Loans</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        body {
+            background-color: #FFFFFF;
+            color: #1F2937;
+        }
+        
+        /* Primary color variables */
+        :root {
+            --primary: #5B4BFF;
+            --secondary: #EEF0FF;
+            --accent: #00E5A8;
+        }
+        
+        .btn-primary {
+            background-color: #5B4BFF;
+            color: white;
+            border-radius: 9999px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease-out;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .btn-primary:hover {
+            filter: brightness(1.1);
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(91, 75, 255, 0.3);
+        }
+        
+        .btn-primary:active {
+            transform: scale(0.98);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: #5B4BFF;
+            border: 2px solid #5B4BFF;
+            border-radius: 9999px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease-out;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #5B4BFF;
+            color: white;
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(91, 75, 255, 0.3);
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-out;
+            border: 1px solid #F3F4F6;
+        }
+        
+        .feature-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 60px rgba(91, 75, 255, 0.15);
+            border-color: #EEF0FF;
+        }
+        
+        .benefit-item {
+            transition: all 0.3s ease-out;
+        }
+        
+        .benefit-item:hover {
+            transform: translateX(8px);
+        }
+        
+        .testimonial-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-out;
+            border: 1px solid #F3F4F6;
+        }
+        
+        .testimonial-card:hover {
+            box-shadow: 0 20px 60px rgba(91, 75, 255, 0.15);
+            transform: translateY(-4px);
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid #E5E7EB;
+            transition: all 0.3s ease-out;
+        }
+        
+        .faq-question {
+            cursor: pointer;
+            padding: 1.5rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: #1F2937;
+            transition: all 0.3s ease-out;
+            user-select: none;
+        }
+        
+        .faq-question:hover {
+            color: #5B4BFF;
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease-out;
+            color: #5B4BFF;
+        }
+        
+        .faq-answer {
+            overflow: hidden;
+            transition: all 0.3s ease-out;
+            color: #6B7280;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .faq-answer.hidden {
+            display: none;
+        }
+        
+        .star-rating {
+            color: #FBBF24;
+        }
+        
+        .gradient-accent {
+            background: linear-gradient(135deg, #5B4BFF 0%, #00E5A8 100%);
+        }
+        
+        .section-title {
+            color: #5B4BFF;
+            font-weight: 700;
+            font-size: 2.25rem;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+        
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 1.875rem;
+            }
+        }
+        
+        .text-accent {
+            color: #00E5A8;
+        }
+        
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: white;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .mobile-menu {
+            transition: all 0.3s ease-out;
+        }
+        
+        .mobile-menu.hidden {
+            display: none;
+        }
+
+        .policy-section {
+            margin-bottom: 3rem;
+        }
+
+        .policy-section h2 {
+            color: #5B4BFF;
+            font-size: 1.875rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .policy-section h3 {
+            color: #1F2937;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .policy-section p {
+            color: #4B5563;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .policy-section ul {
+            list-style-type: disc;
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .policy-section li {
+            color: #4B5563;
+            line-height: 1.8;
+            margin-bottom: 0.5rem;
+        }
+
+        .last-updated {
+            color: #6B7280;
+            font-size: 0.875rem;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center justify-between w-full">
+                <!-- Logo -->
+                <a href="https://voha7777.github.io/tribal-installment-loans-2025-11-19-lvrc8" class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-gradient-to-br from-indigo-600 to-indigo-400 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">T</span>
+                    </div>
+                    <span class="text-xl font-bold text-gray-900">Tribal Loans</span>
+                </a>
+                
+                <!-- Back Link -->
+                <a href="https://voha7777.github.io/tribal-installment-loans-2025-11-19-lvrc8" class="text-gray-700 font-medium hover:text-indigo-600 transition-colors duration-300 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                    Back
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="relative py-20 md:py-32 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-indigo-50 via-white to-emerald-50 opacity-60"></div>
+        <div class="absolute top-20 right-10 w-72 h-72 bg-indigo-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+        <div class="absolute bottom-0 left-10 w-72 h-72 bg-emerald-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+        
+        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight tracking-tight">
+                Privacy Policy
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 leading-relaxed font-medium">
+                We are committed to protecting your privacy and ensuring transparency about how we handle your personal information.
+            </p>
+        </div>
+    </section>
+
+    <!-- Privacy Policy Content -->
+    <section class="py-20 md:py-32 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="last-updated">
+                Last Updated: January 2025
+            </div>
+
+            <!-- Introduction Section -->
+            <div class="policy-section">
+                <h2>Introduction</h2>
+                <p>
+                    Tribal Installment Loans ("we," "us," "our," or "Company") is committed to protecting your privacy and ensuring you have a positive experience on our website and when using our services. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our online lending services.
+                </p>
+                <p>
+                    Please read this Privacy Policy carefully. If you do not agree with our policies and practices, please do not use our services. By accessing and using our website and services, you acknowledge that you have read, understood, and agree to be bound by all the terms of this Privacy Policy.
+                </p>
+            </div>
+
+            <!-- Information We Collect Section -->
+            <div class="policy-section">
+                <h2>Information We Collect</h2>
+                
+                <h3>Personal Information You Provide</h3>
+                <p>
+                    We collect personal information that you voluntarily provide to us when you apply for a loan, create an account, or contact us. This information may include:
+                </p>
+                <ul>
+                    <li>Full name, date of birth, and Social Security Number</li>
+                    <li>Contact information (email address, phone number, mailing address)</li>
+                    <li>Financial information (income, employment history, bank account details)</li>
+                    <li>Government-issued identification documents</li>
+                    <li>Credit history and financial obligations</li>
+                    <li>Employment and income verification documents</li>
+                    <li>Any other information you choose to provide during the application process</li>
+                </ul>
+
+                <h3>Automatically Collected Information</h3>
+                <p>
+                    When you visit our website, we automatically collect certain information about your device and browsing activity, including:
+                </p>
+                <ul>
+                    <li>IP address and device identifiers</li>
+                    <li>Browser type and version</li>
+                    <li>Operating system and device type</li>
+                    <li>Pages visited and time spent on each page</li>
+                    <li>Referring website and exit pages</li>
+                    <li>Clickstream data and interaction patterns</li>
+                    <li>Location information (if you permit)</li>
+                </ul>
+
+                <h3>Information from Third Parties</h3>
+                <p>
+                    We may receive information about you from third parties, including:
+                </p>
+                <ul>
+                    <li>Credit reporting agencies and credit bureaus</li>
+                    <li>Background check and verification services</li>
+                    <li>Employment verification services</li>
+                    <li>Banking and financial institutions</li>
+                    <li>Marketing partners and data providers</li>
+                    <li>Public records and government agencies</li>
+                </ul>
+            </div>
+
+            <!-- How We Use Your Information Section -->
+            <div class="policy-section">
+                <h2>How We Use Your Information</h2>
+                <p>
+                    We use the information we collect for various purposes, including:
+                </p>
+                <ul>
+                    <li>Processing and managing your loan application</li>
+                    <li>Evaluating creditworthiness and assessing lending risk</li>
+                    <li>Verifying your identity and preventing fraud</li>
+                    <li>Communicating with you about your account and loan</li>
+                    <li>Sending you important updates, notices, and disclosures</li>
+                    <li>Complying with legal and regulatory requirements</li>
+                    <li>Servicing your loan and managing payments</li>
+                    <li>Improving our website, services, and customer experience</li>
+                    <li>Conducting research, analytics, and statistical analysis</li>
+                    <li>Marketing and promotional purposes (with your consent)</li>
+                    <li>Detecting, investigating, and preventing fraud and abuse</li>
+                    <li>Enforcing our terms and conditions and other agreements</li>
+                    <li>Protecting our legal rights and the rights of others</li>
+                </ul>
+            </div>
+
+            <!-- Information Sharing Section -->
+            <div class="policy-section">
+                <h2>How We Share Your Information</h2>
+                
+                <h3>Service Providers</h3>
+                <p>
+                    We may share your information with third-party service providers who perform services on our behalf, including payment processors, background check providers, verification services, and customer service providers. These service providers are contractually obligated to maintain the confidentiality and security of your information.
+                </p>
+
+                <h3>Legal Requirements</h3>
+                <p>
+                    We may disclose your information when required by law, court order, subpoena, or government request. We may also share information when we believe in good faith that disclosure is necessary to protect our rights, your safety, or the safety of others.
+                </p>
+
+                <h3>Business Transfers</h3>
+                <p>
+                    If we are involved in a merger, acquisition, bankruptcy, or sale of assets, your information may be transferred as part of that transaction. We will provide notice before your information becomes subject to a different privacy policy.
+                </p>
+
+                <h3>Aggregated and De-identified Information</h3>
+                <p>
+                    We may share aggregated and de-identified information that cannot reasonably be used to identify you with third parties for research, marketing, analytics, and other purposes.
+                </p>
+
+                <h3>With Your Consent</h3>
+                <p>
+                    We may share your information with third parties when you provide explicit consent to do so for specific purposes.
+                </p>
+            </div>
+
+            <!-- Cookies and Tracking Section -->
+            <div class="policy-section">
+                <h2>Cookies and Tracking Technologies</h2>
+                
+                <h3>What Are Cookies?</h3>
+                <p>
+                    Cookies are small text files stored on your device that allow us to recognize you and remember your preferences. We use cookies to enhance your experience, track usage patterns, and improve our services.
+                </p>
+
+                <h3>Types of Cookies We Use</h3>
+                <ul>
+                    <li><strong>Essential Cookies:</strong> Required for basic website functionality and security</li>
+                    <li><strong>Performance Cookies:</strong> Help us understand how visitors use our website</li>
+                    <li><strong>Functional Cookies:</strong> Remember your preferences and settings</li>
+                    <li><strong>Marketing Cookies:</strong> Used for targeted advertising and promotional purposes</li>
+                </ul>
+
+                <h3>Other Tracking Technologies</h3>
+                <p>
+                    In addition to cookies, we may use other tracking technologies including:
+                </p>
+                <ul>
+                    <li>Web beacons and pixel tags</li>
+                    <li>Analytics tools and services</li>
+                    <li>Local storage and similar technologies</li>
+                    <li>Log files and server analytics</li>
+                </ul>
+
+                <h3>Managing Cookies</h3>
+                <p>
+                    Most web browsers allow you to control cookies through their settings. You can choose to disable cookies or receive notifications when cookies are being set. However, disabling cookies may affect the functionality of our website and your ability to use certain features.
+                </p>
+            </div>
+
+            <!-- Data Security Section -->
+            <div class="policy-section">
+                <h2>Data Security</h2>
+                <p>
+                    We implement comprehensive security measures to protect your personal information from unauthorized access, alteration, disclosure, and destruction. Our security measures include:
+                </p>
+                <ul>
+                    <li>SSL/TLS encryption for data transmission</li>
+                    <li>Secure password protection and authentication</li>
+                    <li>Firewalls and intrusion detection systems</li>
+                    <li>Regular security audits and vulnerability assessments</li>
+                    <li>Employee training and access controls</li>
+                    <li>Secure data storage and backup systems</li>
+                </ul>
+                <p>
+                    While we strive to protect your information, no security system is impenetrable. We cannot guarantee absolute security of your information. You are responsible for maintaining the confidentiality of your account credentials.
+                </p>
+            </div>
+
+            <!-- Your Rights Section -->
+            <div class="policy-section">
+                <h2>Your Privacy Rights</h2>
+                
+                <h3>Access and Correction</h3>
+                <p>
+                    You have the right to access, review, and request corrections to your personal information. You may contact us to request access to the information we hold about you.
+                </p>
+
+                <h3>Opt-Out and Unsubscribe</h3>
+                <p>
+                    You may opt out of receiving promotional emails and marketing communications by clicking the unsubscribe link in our emails or contacting us directly. Please note that even if you opt out of marketing communications, we will continue to send you transactional messages related to your account and loan.
+                </p>
+
+                <h3>Do Not Track</h3>
+                <p>
+                    Some browsers include a "Do Not Track" feature. Our website does not currently respond to Do Not Track signals, but you may disable cookies and tracking technologies through your browser settings.
+                </p>
+
+                <h3>California Privacy Rights</h3>
+                <p>
+                    If you are a California resident, you may have additional rights under the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA), including the right to know what information is collected, the right to delete information, and the right to opt-out of the sale of personal information.
+                </p>
+            </div>
+
+            <!-- Data Retention Section -->
+            <div class="policy-section">
+                <h2>Data Retention</h2>
+                <p>
+                    We retain your personal information for as long as necessary to provide our services, fulfill the purposes outlined in this Privacy Policy, and comply with legal and regulatory requirements. The retention period may vary depending on the context of the processing and our legal obligations. When your information is no longer needed, we will securely delete or anonymize it.
+                </p>
+            </div>
+
+            <!-- Third-Party Links Section -->
+            <div class="policy-section">
+                <h2>Third-Party Links and Services</h2>
+                <p>
+                    Our website may contain links to third-party websites and services that are not operated by us. This Privacy Policy applies only to our website and services. We are not responsible for the privacy practices of third-party websites. We encourage you to review the privacy policies of any third-party websites before providing your personal information.
+                </p>
+            </div>
+
+            <!-- Children's Privacy Section -->
+            <div class="policy-section">
+                <h2>Children's Privacy</h2>
+                <p>
+                    Our services are not intended for individuals under the age of 18. We do not knowingly collect personal information from children under 18. If we become aware that we have collected information from a child under 18, we will take steps to delete such information and terminate the child's account. If you believe we have collected information from a child under 18, please contact us immediately.
+                </p>
+            </div>
+
+            <!-- Policy Updates Section -->
+            <div class="policy-section">
+                <h2>Updates to This Privacy Policy</h2>
+                <p>
+                    We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, and other factors. We will notify you of material changes by posting the updated Privacy Policy on our website and updating the "Last Updated" date. Your continued use of our website and services following the posting of changes constitutes your acceptance of the updated Privacy Policy.
+                </p>
+            </div>
+
+            <!-- Contact Information Section -->
+            <div class="policy-section">
+                <h2>Contact Us</h2>
+                <p>
+                    If you have questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us at:
+                </p>
+                <div class="bg-indigo-50 border border-indigo-200 rounded-lg p-6 mt-4">
+                    <p class="font-semibold text-gray-900 mb-2">Tribal Installment Loans</p>
+                    <p class="text-gray-700 mb-2">
+                        <strong>Email:</strong> <a href="mailto:privacy@tribalinstallmentloans.com" class="text-indigo-600 hover:text-indigo-700">privacy@tribalinstallmentloans.com</a>
+                    </p>
+                    <p class="text-gray-700 mb-2">
+                        <strong>Mailing Address:</strong><br>
+                        Tribal Installment Loans<br>
+                        Privacy Department<br>
+                        [Your Company Address]
+                    </p>
+                    <p class="text-gray-700">
+                        <strong>Response Time:</strong> We will respond to your inquiry within 30 business days.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Acknowledgment Section -->
+            <div class="policy-section bg-gray-50 border border-gray-200 rounded-lg p-6 mt-8">
+                <h3 class="text-gray-900">Your Acknowledgment</h3>
+                <p>
+                    By using our website and services, you acknowledge that you have read this Privacy Policy and understand our privacy practices. You consent to the collection, use, and sharing of your information as described in this policy.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-12">
+                <!-- Column 1: Brand -->
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-indigo-500 to-indigo-400 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">T</span>
+                        </div>
+                        <span class="text-xl font-bold text-white">Tribal Loans</span>
+                    </div>
+                    <p class="text-sm leading-relaxed">
+                        Fast, flexible, and transparent installment loans designed to meet your financial needs with integrity and respect.
+                    </p>
+                </div>
+                
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="https://voha7777.github.io/tribal-installment-loans-2025-11-19-lvrc8#features" class="hover:text-white transition-colors duration-300">Features</a></li>
+                        <li><a href="https://voha7777.github.io/tribal-installment-loans-2025-11-19-lvrc8#benefits" class="hover:text-white transition-colors duration-300">Benefits</a></li>
+                        <li><a href="https://voha7777.github.io/tribal-installment-loans-2025-11-19-lvrc8#testimonials" class="hover:text-white transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="https://voha7777.github.io/tribal-installment-loans-2025-11-19-lvrc8#about" class="hover:text-white transition-colors duration-300">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3: Legal -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-4">Legal</h4>
+                    <ul class="space-y-3">
+                        <li><a href="privacy.html" class="hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="blog.html" class="hover:text-white transition-colors duration-300">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors duration-300">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4: Contact & Social -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-4">Contact & Follow</h4>
+                    <p class="text-sm mb-4">
+                        <strong class="text-white">Email:</strong><br>
+                        <a href="mailto:info@tribalinstallmentloans.com" class="hover:text-white transition-colors duration-300">info@tribalinstallmentloans.com</a>
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-indigo-600 transition-all duration-300 hover:scale-110">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-indigo-600 transition-all duration-300 hover:scale-110">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-indigo-600 transition-all duration-300 hover:scale-110">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-indigo-600 transition-all duration-300 hover:scale-110">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Divider -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-sm text-gray-400">
+                        &copy; 2025 Tribal Installment Loans. All rights reserved.
+                    </p>
+                    <p class="text-sm text-gray-400">
+                        Designed with <span class="text-red-500">♥</span> for your financial success
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
