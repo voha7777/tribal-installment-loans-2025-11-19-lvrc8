@@ -407,7 +407,7 @@
                 <!-- Right Image -->
                 <div class="relative">
                     <div class="absolute inset-0 bg-gradient-to-br from-indigo-100 to-emerald-100 rounded-2xl opacity-60"></div>
-                    <img src="https://images.unsplash.com/photo-1554224311-beee415c15c7?w=600&h=600&fit=crop" alt="Flexible payment options and financial management" class="relative rounded-2xl shadow-xl w-full h-auto object-cover">
+                    <img src="https://www.westconcomstor.com/content/dam/wcgcom/Global/CorpSite/main/westcon-flex-financial-solutions.jpg" alt="Flexible payment options and financial management" class="relative rounded-2xl shadow-xl w-full h-auto object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
                 </div>
             </div>
@@ -787,39 +787,3 @@
                 mobileMenuButton.addEventListener('click', () => {
                     mobileMenu.classList.toggle('hidden');
                     const icon = mobileMenuButton.querySelector('i');
-                    if (icon) {
-                        icon.classList.toggle('fa-bars');
-                        icon.classList.toggle('fa-times');
-                    }
-                });
-
-                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-                mobileMenuLinks.forEach(link => {
-                    link.addEventListener('click', () => {
-                        mobileMenu.classList.add('hidden');
-                        const icon = mobileMenuButton.querySelector('i');
-                        if (icon) {
-                            icon.classList.remove('fa-times');
-                            icon.classList.add('fa-bars');
-                        }
-                    });
-                });
-            }
-
-            // Smooth Scroll for Anchor Links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    const href = this.getAttribute('href');
-                    if (href !== '#' && href.length > 1) {
-                        e.preventDefault();
-                        const target = document.querySelector(href);
-                        if (target) {
-                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                        }
-                    }
-                });
-            });
-        });
-    </script>
-</body>
-</html>
